@@ -1,0 +1,11 @@
+apiVersion: config.istio.io/v1alpha2
+kind: RouteRule
+metadata:
+  name: notification-slack-id
+spec:
+  destination:
+    name: notification-service
+  precedence: 1
+  route:
+  - labels:
+      version: slack
