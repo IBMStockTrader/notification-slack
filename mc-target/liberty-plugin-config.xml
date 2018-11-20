@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<liberty-plugin-config>
+    <activeBuildProfiles>
+        <profileId>microclimate</profileId>
+    </activeBuildProfiles>
+    <installDirectory>/opt/ibm/wlp</installDirectory>
+    <serverDirectory>/microclimate-workspace/notificationslack/mc-target/liberty/wlp/usr/servers/defaultServer</serverDirectory>
+    <userDirectory>/microclimate-workspace/notificationslack/mc-target/liberty/wlp/usr</userDirectory>
+    <serverOutputDirectory>/microclimate-workspace/notificationslack/mc-target/liberty/wlp/usr/servers/defaultServer</serverOutputDirectory>
+    <serverName>defaultServer</serverName>
+    <configDirectory>/microclimate-workspace/notificationslack/src/main/liberty/config</configDirectory>
+    <configFile>/microclimate-workspace/notificationslack/src/main/liberty/config/server.xml</configFile>
+    <bootstrapProperties>
+        <app.location>notification-slack-1.0-SNAPSHOT.war</app.location>
+        <default.http.port>9080</default.http.port>
+        <default.https.port>9443</default.https.port>
+        <server.start.wait.time>90</server.start.wait.time>
+    </bootstrapProperties>
+    <appsDirectory>apps</appsDirectory>
+    <looseApplication>true</looseApplication>
+    <stripVersion>false</stripVersion>
+    <installAppPackages>project</installAppPackages>
+    <applicationFilename>notification-slack-1.0-SNAPSHOT.war.xml</applicationFilename>
+    <assemblyInstallDirectory>/microclimate-workspace/notificationslack/mc-target/liberty</assemblyInstallDirectory>
+    <refresh>false</refresh>
+    <installAppsConfigDropins>/microclimate-workspace/notificationslack/mc-target/liberty/wlp/usr/servers/defaultServer/configDropins/defaults/install_apps_configuration_1491924271.xml</installAppsConfigDropins>
+    <projectType>war</projectType>
+    <warSourceDirectory>/microclimate-workspace/notificationslack/src/main/webapp</warSourceDirectory>
+</liberty-plugin-config>

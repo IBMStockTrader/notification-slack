@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archive>
+    <dir sourceOnDisk="/microclimate-workspace/notificationslack/src/main/webapp" targetInArchive="/"/>
+    <dir sourceOnDisk="/home/default/app/mc-target/classes" targetInArchive="/WEB-INF/classes"/>
+    <file sourceOnDisk="/microclimate-workspace/notificationslack/mc-target/liberty-maven/resources/META-INF/MANIFEST.MF" targetInArchive="/META-INF/MANIFEST.MF"/>
+</archive>

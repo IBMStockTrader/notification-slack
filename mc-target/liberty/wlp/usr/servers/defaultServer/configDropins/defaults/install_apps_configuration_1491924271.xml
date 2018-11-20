@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server>
+    <webApplication id="notification-slack" location="notification-slack-1.0-SNAPSHOT.war" name="notification-slack"/>
+</server>
