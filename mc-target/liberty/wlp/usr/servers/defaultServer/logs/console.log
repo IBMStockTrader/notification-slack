@@ -1,0 +1,64 @@
+JVMSHRC287E Persistent cache cannot be located on a networked file system. Either select "nonpersistent" or a different cacheDir.
+JVMSHRC686I Failed to startup shared class cache. Continue without using it as -Xshareclasses:nonfatal is specified
+Launching defaultServer (WebSphere Application Server 18.0.0.3/wlp-1.0.22.cl180320180905-2337) on IBM J9 VM, version 8.0.5.25 - pxa6480sr5fp25-20181030_01(SR5 FP25) (en_US)
+[AUDIT   ] CWWKE0001I: The server defaultServer has been launched.
+[AUDIT   ] CWWKE0100I: This product is licensed for development, and limited production use. The full license terms can be viewed here: https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/license/base_ilan/ilan/18.0.0.3/lafiles/en.html
+[AUDIT   ] CWWKG0093A: Processing configuration drop-ins resource: /home/default/app/mc-target/liberty/wlp/usr/servers/defaultServer/configDropins/defaults/install_apps_configuration_1491924271.xml
+[INFO    ] CWWKE0002I: The kernel started after 6.787 seconds
+[INFO    ] CWWKF0007I: Feature update started.
+[INFO    ] CWWKS0007I: The security service is starting...
+[INFO    ] CWPKI0802I: Creating the SSL certificate. This may take a few seconds.
+[INFO    ] CWWKS4103I: Creating the LTPA keys. This may take a few seconds.
+[INFO    ] CWWKS1123I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been activated. 
+[AUDIT   ] CWWKZ0058I: Monitoring dropins for applications.
+[AUDIT   ] CWWKS4104A: LTPA keys created in 0.995 seconds. LTPA key file: /home/default/app/mc-target/liberty/wlp/usr/servers/defaultServer/resources/security/ltpa.keys
+[INFO    ] CWWKS4105I: LTPA configuration is ready after 1.039 seconds.
+[INFO    ] CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host *  (IPv4) port 9080.
+[INFO    ] DYNA1001I: WebSphere Dynamic Cache instance named baseCache initialized successfully.
+[INFO    ] DYNA1071I: The cache provider default is being used.
+[INFO    ] DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[INFO    ] CWWKS6012I: The JSON Web Token (JWT) consumer service is available.
+[INFO    ] CWWKS6002I: The JSON Web Token (JWT) endpoint service is available.
+[INFO    ] CWWKS5500I: The MicroProfile JWT configuration [defaultMpJwt] was successfully processed.
+[INFO    ] CWWKS5500I: The MicroProfile JWT configuration [myMpJwt] was successfully processed.
+[INFO    ] CWWKS5500I: The MicroProfile JWT configuration [MicroProfileJwtService] was successfully processed.
+[INFO    ] SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[AUDIT   ] CWPKI0803A: SSL certificate created in 2.099 seconds. SSL key file: /home/default/app/mc-target/liberty/wlp/usr/servers/defaultServer/resources/security/key.jks
+[INFO    ] CWWKO0219I: TCP Channel defaultHttpEndpoint-ssl has been started and is now listening for requests on host *  (IPv4) port 9443.
+[INFO    ] Created user preferences directory.
+[WARNING ] CWWKZ0014W: The application NotificationSlack could not be started as it could not be found at location NotificationSlack.war.
+[INFO    ] CWWKZ0018I: Starting application notification-slack.
+[INFO    ] SRVE0169I: Loading Web Module: health.
+[INFO    ] SRVE0169I: Loading Web Module: com.ibm.ws.security.jwt.
+[INFO    ] SRVE0250I: Web Module com.ibm.ws.security.jwt has been bound to default_host.
+[INFO    ] SRVE0169I: Loading Web Module: PrivateMicroProfileMetrics.
+[INFO    ] SRVE0250I: Web Module PrivateMicroProfileMetrics has been bound to default_host.
+[INFO    ] SRVE0250I: Web Module health has been bound to default_host.
+[INFO    ] SRVE0169I: Loading Web Module: ibm/api.
+[INFO    ] SRVE0250I: Web Module ibm/api has been bound to default_host.
+[AUDIT   ] CWWKT0016I: Web application available (default_host): http://mc-notificationslack-1bd5fa20-ecf9-11e8-8bb7-idc-75f8c9bfb7tzhk:9080/jwt/
+[AUDIT   ] CWWKT0016I: Web application available (default_host): http://mc-notificationslack-1bd5fa20-ecf9-11e8-8bb7-idc-75f8c9bfb7tzhk:9080/metrics/
+[AUDIT   ] CWWKT0016I: Web application available (default_host): http://mc-notificationslack-1bd5fa20-ecf9-11e8-8bb7-idc-75f8c9bfb7tzhk:9080/health/
+[AUDIT   ] CWWKT0016I: Web application available (default_host): http://mc-notificationslack-1bd5fa20-ecf9-11e8-8bb7-idc-75f8c9bfb7tzhk:9080/ibm/api/
+[INFO    ] SESN0176I: A new session context will be created for application key default_host/health
+[INFO    ] SESN0176I: A new session context will be created for application key default_host/jwt
+[INFO    ] SESN0176I: A new session context will be created for application key default_host/metrics
+[INFO    ] SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[INFO    ] WELD-000900: 2.4.7 (Final)
+[INFO    ] SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[INFO    ] SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[INFO    ] SESN0176I: A new session context will be created for application key default_host/ibm/api
+[INFO    ] SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[INFO    ] DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[INFO    ] SRVE0242I: [com.ibm.ws.microprofile.metrics.private] [/metrics] [PrivateMetricsRESTProxyServlet]: Initialization successful.
+[INFO    ] SRVE0169I: Loading Web Module: Notification.
+[INFO    ] SRVE0250I: Web Module Notification has been bound to default_host.
+[AUDIT   ] CWWKT0016I: Web application available (default_host): http://mc-notificationslack-1bd5fa20-ecf9-11e8-8bb7-idc-75f8c9bfb7tzhk:9080/notification-slack/
+[AUDIT   ] CWWKZ0001I: Application notification-slack started in 1.037 seconds.
+[INFO    ] SESN0176I: A new session context will be created for application key default_host/notification-slack
+[INFO    ] SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[INFO    ] CWWKS9123I:  For URL /* in application notification-slack, the following HTTP methods are uncovered, and not accessible: GET PUT DELETE HEAD OPTIONS TRACE 
+[INFO    ] SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/default/app/mc-target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[AUDIT   ] CWWKF0012I: The server installed the following features: [microProfile-1.2, mpFaultTolerance-1.0, servlet-3.1, ssl-1.0, jndi-1.0, logstashCollector-1.0, mpHealth-1.0, appSecurity-2.0, jsonp-1.0, mpConfig-1.1, jaxrs-2.0, jaxrsClient-2.0, concurrent-1.0, jwt-1.0, mpMetrics-1.0, mpJwt-1.0, json-1.0, cdi-1.2, distributedMap-1.0].
+[INFO    ] CWWKF0008I: Feature update completed in 39.154 seconds.
+[AUDIT   ] CWWKF0011I: The server defaultServer is ready to run a smarter planet.
