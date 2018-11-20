@@ -6,66 +6,65 @@ java.home = /home/default/java/jre
 java.version = 1.8.0_191
 java.runtime = Java(TM) SE Runtime Environment (8.0.5.25 - pxa6480sr5fp25-20181030_01(SR5 FP25))
 os = Linux (4.4.0-134-generic; amd64) (en_US)
-process = 202@mc-notificationslack-1bd5fa20-ecf9-11e8-8bb7-idc-75f8c9bfb7tzhk
+process = 934@mc-notificationslack-1bd5fa20-ecf9-11e8-8bb7-idc-75f8c9bfb7tzhk
 ********************************************************************************
-[11/20/18 21:10:06:342 UTC] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server defaultServer has been launched.
-[11/20/18 21:10:06:362 UTC] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0100I: This product is licensed for development, and limited production use. The full license terms can be viewed here: https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/license/base_ilan/ilan/18.0.0.3/lafiles/en.html
-[11/20/18 21:10:07:396 UTC] 0000001e com.ibm.ws.config.xml.internal.ServerXMLConfiguration        A CWWKG0093A: Processing configuration drop-ins resource: /home/default/app/mc-target/liberty/wlp/usr/servers/defaultServer/configDropins/defaults/install_apps_configuration_1491924271.xml
-[11/20/18 21:10:12:623 UTC] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 6.787 seconds
-[11/20/18 21:10:12:767 UTC] 00000029 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
-[11/20/18 21:10:16:719 UTC] 0000001e com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0007I: The security service is starting...
-[11/20/18 21:10:17:377 UTC] 00000024 com.ibm.ws.ssl.config.WSKeyStore                             I CWPKI0802I: Creating the SSL certificate. This may take a few seconds.
-[11/20/18 21:10:17:442 UTC] 00000034 com.ibm.ws.security.token.ltpa.internal.LTPAKeyInfoManager   I CWWKS4103I: Creating the LTPA keys. This may take a few seconds.
-[11/20/18 21:10:17:445 UTC] 0000001e ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1123I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been activated. 
-[11/20/18 21:10:18:419 UTC] 0000001e com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications.
-[11/20/18 21:10:18:437 UTC] 00000034 com.ibm.ws.security.token.ltpa.internal.LTPAKeyInfoManager   A CWWKS4104A: LTPA keys created in 0.995 seconds. LTPA key file: /home/default/app/mc-target/liberty/wlp/usr/servers/defaultServer/resources/security/ltpa.keys
-[11/20/18 21:10:18:442 UTC] 00000034 com.ibm.ws.security.token.ltpa.internal.LTPAKeyCreateTask    I CWWKS4105I: LTPA configuration is ready after 1.039 seconds.
-[11/20/18 21:10:18:462 UTC] 0000002b com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host *  (IPv4) port 9080.
-[11/20/18 21:10:18:975 UTC] 0000001e com.ibm.ws.cache.ServerCache                                 I DYNA1001I: WebSphere Dynamic Cache instance named baseCache initialized successfully.
-[11/20/18 21:10:18:977 UTC] 0000001e com.ibm.ws.cache.ServerCache                                 I DYNA1071I: The cache provider default is being used.
-[11/20/18 21:10:18:978 UTC] 0000001e com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
-[11/20/18 21:10:19:030 UTC] 0000001e com.ibm.ws.security.jwt.internal.ConsumerImpl                I CWWKS6012I: The JSON Web Token (JWT) consumer service is available.
-[11/20/18 21:10:19:042 UTC] 0000001e com.ibm.ws.security.jwt.web.JwtEndpointServices              I CWWKS6002I: The JSON Web Token (JWT) endpoint service is available.
-[11/20/18 21:10:19:275 UTC] 0000001e com.ibm.ws.security.mp.jwt.impl.MicroProfileJwtConfigImpl    I CWWKS5500I: The MicroProfile JWT configuration [defaultMpJwt] was successfully processed.
-[11/20/18 21:10:19:278 UTC] 0000001e com.ibm.ws.security.mp.jwt.impl.MicroProfileJwtConfigImpl    I CWWKS5500I: The MicroProfile JWT configuration [myMpJwt] was successfully processed.
-[11/20/18 21:10:19:280 UTC] 0000001e com.ibm.ws.security.mp.jwt.impl.MicroProfileJwtServiceImpl   I CWWKS5500I: The MicroProfile JWT configuration [MicroProfileJwtService] was successfully processed.
-[11/20/18 21:10:19:380 UTC] 0000001e com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
-[11/20/18 21:10:19:476 UTC] 00000024 com.ibm.ws.ssl.config.WSKeyStore                             A CWPKI0803A: SSL certificate created in 2.099 seconds. SSL key file: /home/default/app/mc-target/liberty/wlp/usr/servers/defaultServer/resources/security/key.jks
-[11/20/18 21:10:19:561 UTC] 00000034 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0219I: TCP Channel defaultHttpEndpoint-ssl has been started and is now listening for requests on host *  (IPv4) port 9443.
-[11/20/18 21:10:21:342 UTC] 0000001e java.util.prefs                                              I Created user preferences directory.
-[11/20/18 21:10:21:700 UTC] 0000002b com.ibm.ws.app.manager.AppMessageHelper                      W CWWKZ0014W: The application NotificationSlack could not be started as it could not be found at location NotificationSlack.war.
-[11/20/18 21:10:21:737 UTC] 0000002d com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application notification-slack.
-[11/20/18 21:10:22:254 UTC] 00000038 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: health.
-[11/20/18 21:10:22:255 UTC] 00000054 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: com.ibm.ws.security.jwt.
-[11/20/18 21:10:22:258 UTC] 00000054 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module com.ibm.ws.security.jwt has been bound to default_host.
-[11/20/18 21:10:22:252 UTC] 00000036 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: PrivateMicroProfileMetrics.
-[11/20/18 21:10:22:259 UTC] 00000036 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module PrivateMicroProfileMetrics has been bound to default_host.
-[11/20/18 21:10:22:255 UTC] 00000055 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ibm/api.
-[11/20/18 21:10:22:258 UTC] 00000038 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module health has been bound to default_host.
-[11/20/18 21:10:22:260 UTC] 00000055 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ibm/api has been bound to default_host.
-[11/20/18 21:10:22:260 UTC] 00000054 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://mc-notificationslack-1bd5fa20-ecf9-11e8-8bb7-idc-75f8c9bfb7tzhk:9080/jwt/
-[11/20/18 21:10:22:261 UTC] 00000036 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://mc-notificationslack-1bd5fa20-ecf9-11e8-8bb7-idc-75f8c9bfb7tzhk:9080/metrics/
-[11/20/18 21:10:22:261 UTC] 00000038 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://mc-notificationslack-1bd5fa20-ecf9-11e8-8bb7-idc-75f8c9bfb7tzhk:9080/health/
-[11/20/18 21:10:22:262 UTC] 00000055 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://mc-notificationslack-1bd5fa20-ecf9-11e8-8bb7-idc-75f8c9bfb7tzhk:9080/ibm/api/
-[11/20/18 21:10:22:309 UTC] 00000034 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/health
-[11/20/18 21:10:22:309 UTC] 00000032 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/jwt
-[11/20/18 21:10:22:315 UTC] 0000002a com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/metrics
-[11/20/18 21:10:22:338 UTC] 00000034 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
-[11/20/18 21:10:22:347 UTC] 0000002d org.jboss.weld.Version                                       I WELD-000900: 2.4.7 (Final)
-[11/20/18 21:10:22:360 UTC] 0000002a com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
-[11/20/18 21:10:22:360 UTC] 00000032 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
-[11/20/18 21:10:22:361 UTC] 00000055 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ibm/api
-[11/20/18 21:10:22:361 UTC] 00000055 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
-[11/20/18 21:10:22:379 UTC] 00000055 com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
-[11/20/18 21:10:22:732 UTC] 0000002a com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [com.ibm.ws.microprofile.metrics.private] [/metrics] [PrivateMetricsRESTProxyServlet]: Initialization successful.
-[11/20/18 21:10:22:771 UTC] 0000002d com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: Notification.
-[11/20/18 21:10:22:772 UTC] 0000002d com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module Notification has been bound to default_host.
-[11/20/18 21:10:22:772 UTC] 0000002d com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://mc-notificationslack-1bd5fa20-ecf9-11e8-8bb7-idc-75f8c9bfb7tzhk:9080/notification-slack/
-[11/20/18 21:10:22:775 UTC] 0000002d com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application notification-slack started in 1.037 seconds.
-[11/20/18 21:10:22:776 UTC] 0000002e com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/notification-slack
-[11/20/18 21:10:22:777 UTC] 0000002e com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
-[11/20/18 21:10:23:022 UTC] 0000002e com.ibm.ws.webcontainer.security.ServletStartedListener      I CWWKS9123I:  For URL /* in application notification-slack, the following HTTP methods are uncovered, and not accessible: GET PUT DELETE HEAD OPTIONS TRACE 
-[11/20/18 21:10:23:282 UTC] 0000002f com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/default/app/mc-target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
-[11/20/18 21:10:51:781 UTC] 00000029 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [microProfile-1.2, mpFaultTolerance-1.0, servlet-3.1, ssl-1.0, jndi-1.0, logstashCollector-1.0, mpHealth-1.0, appSecurity-2.0, jsonp-1.0, mpConfig-1.1, jaxrs-2.0, jaxrsClient-2.0, concurrent-1.0, jwt-1.0, mpMetrics-1.0, mpJwt-1.0, json-1.0, cdi-1.2, distributedMap-1.0].
-[11/20/18 21:10:51:782 UTC] 00000029 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 39.154 seconds.
-[11/20/18 21:10:51:783 UTC] 00000029 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The server defaultServer is ready to run a smarter planet.
+[11/20/18 21:14:48:548 UTC] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server defaultServer has been launched.
+[11/20/18 21:14:48:573 UTC] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0100I: This product is licensed for development, and limited production use. The full license terms can be viewed here: https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/license/base_ilan/ilan/18.0.0.3/lafiles/en.html
+[11/20/18 21:14:49:594 UTC] 0000001e com.ibm.ws.config.xml.internal.ServerXMLConfiguration        A CWWKG0093A: Processing configuration drop-ins resource: /home/default/app/mc-target/liberty/wlp/usr/servers/defaultServer/configDropins/defaults/install_apps_configuration_1491924271.xml
+[11/20/18 21:14:50:258 UTC] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 2.12 seconds
+[11/20/18 21:14:50:356 UTC] 00000029 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[11/20/18 21:14:54:031 UTC] 0000001e com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0007I: The security service is starting...
+[11/20/18 21:14:54:630 UTC] 00000024 com.ibm.ws.ssl.config.WSKeyStore                             I CWPKI0802I: Creating the SSL certificate. This may take a few seconds.
+[11/20/18 21:14:54:662 UTC] 00000033 com.ibm.ws.security.token.ltpa.internal.LTPAKeyInfoManager   I CWWKS4103I: Creating the LTPA keys. This may take a few seconds.
+[11/20/18 21:14:54:689 UTC] 0000001e ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1123I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been activated. 
+[11/20/18 21:14:55:620 UTC] 0000001e com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications.
+[11/20/18 21:14:55:631 UTC] 00000033 com.ibm.ws.security.token.ltpa.internal.LTPAKeyInfoManager   A CWWKS4104A: LTPA keys created in 0.969 seconds. LTPA key file: /home/default/app/mc-target/liberty/wlp/usr/servers/defaultServer/resources/security/ltpa.keys
+[11/20/18 21:14:55:642 UTC] 00000033 com.ibm.ws.security.token.ltpa.internal.LTPAKeyCreateTask    I CWWKS4105I: LTPA configuration is ready after 0.983 seconds.
+[11/20/18 21:14:55:668 UTC] 00000038 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host *  (IPv4) port 9080.
+[11/20/18 21:14:56:118 UTC] 0000001e com.ibm.ws.cache.ServerCache                                 I DYNA1001I: WebSphere Dynamic Cache instance named baseCache initialized successfully.
+[11/20/18 21:14:56:121 UTC] 0000001e com.ibm.ws.cache.ServerCache                                 I DYNA1071I: The cache provider default is being used.
+[11/20/18 21:14:56:122 UTC] 0000001e com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[11/20/18 21:14:56:195 UTC] 0000001e com.ibm.ws.security.jwt.internal.ConsumerImpl                I CWWKS6012I: The JSON Web Token (JWT) consumer service is available.
+[11/20/18 21:14:56:216 UTC] 0000001e com.ibm.ws.security.jwt.web.JwtEndpointServices              I CWWKS6002I: The JSON Web Token (JWT) endpoint service is available.
+[11/20/18 21:14:56:393 UTC] 0000001e com.ibm.ws.security.mp.jwt.impl.MicroProfileJwtConfigImpl    I CWWKS5500I: The MicroProfile JWT configuration [defaultMpJwt] was successfully processed.
+[11/20/18 21:14:56:396 UTC] 0000001e com.ibm.ws.security.mp.jwt.impl.MicroProfileJwtConfigImpl    I CWWKS5500I: The MicroProfile JWT configuration [myMpJwt] was successfully processed.
+[11/20/18 21:14:56:397 UTC] 0000001e com.ibm.ws.security.mp.jwt.impl.MicroProfileJwtServiceImpl   I CWWKS5500I: The MicroProfile JWT configuration [MicroProfileJwtService] was successfully processed.
+[11/20/18 21:14:56:470 UTC] 0000001e com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[11/20/18 21:14:56:645 UTC] 00000024 com.ibm.ws.ssl.config.WSKeyStore                             A CWPKI0803A: SSL certificate created in 2.014 seconds. SSL key file: /home/default/app/mc-target/liberty/wlp/usr/servers/defaultServer/resources/security/key.jks
+[11/20/18 21:14:56:724 UTC] 0000002d com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0219I: TCP Channel defaultHttpEndpoint-ssl has been started and is now listening for requests on host *  (IPv4) port 9443.
+[11/20/18 21:14:57:388 UTC] 0000003f com.ibm.ws.app.manager.AppMessageHelper                      W CWWKZ0014W: The application NotificationSlack could not be started as it could not be found at location NotificationSlack.war.
+[11/20/18 21:14:57:421 UTC] 0000003d com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application notification-slack.
+[11/20/18 21:14:57:822 UTC] 00000038 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: PrivateMicroProfileMetrics.
+[11/20/18 21:14:57:822 UTC] 00000033 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ibm/api.
+[11/20/18 21:14:57:821 UTC] 0000002c com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: health.
+[11/20/18 21:14:57:824 UTC] 00000038 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module PrivateMicroProfileMetrics has been bound to default_host.
+[11/20/18 21:14:57:821 UTC] 00000037 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: com.ibm.ws.security.jwt.
+[11/20/18 21:14:57:826 UTC] 00000037 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module com.ibm.ws.security.jwt has been bound to default_host.
+[11/20/18 21:14:57:825 UTC] 00000038 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://mc-notificationslack-1bd5fa20-ecf9-11e8-8bb7-idc-75f8c9bfb7tzhk:9080/metrics/
+[11/20/18 21:14:57:826 UTC] 0000002c com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module health has been bound to default_host.
+[11/20/18 21:14:57:826 UTC] 0000002c com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://mc-notificationslack-1bd5fa20-ecf9-11e8-8bb7-idc-75f8c9bfb7tzhk:9080/health/
+[11/20/18 21:14:57:827 UTC] 00000037 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://mc-notificationslack-1bd5fa20-ecf9-11e8-8bb7-idc-75f8c9bfb7tzhk:9080/jwt/
+[11/20/18 21:14:57:828 UTC] 00000033 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ibm/api has been bound to default_host.
+[11/20/18 21:14:57:829 UTC] 00000033 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://mc-notificationslack-1bd5fa20-ecf9-11e8-8bb7-idc-75f8c9bfb7tzhk:9080/ibm/api/
+[11/20/18 21:14:57:880 UTC] 00000058 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/metrics
+[11/20/18 21:14:57:880 UTC] 00000059 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/health
+[11/20/18 21:14:57:882 UTC] 00000041 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ibm/api
+[11/20/18 21:14:57:893 UTC] 0000003d org.jboss.weld.Version                                       I WELD-000900: 2.4.7 (Final)
+[11/20/18 21:14:57:894 UTC] 00000058 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[11/20/18 21:14:57:904 UTC] 00000059 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[11/20/18 21:14:57:905 UTC] 00000040 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/jwt
+[11/20/18 21:14:57:905 UTC] 00000040 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[11/20/18 21:14:57:906 UTC] 00000041 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[11/20/18 21:14:57:930 UTC] 00000059 com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[11/20/18 21:14:58:050 UTC] 00000058 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [com.ibm.ws.microprofile.metrics.private] [/metrics] [PrivateMetricsRESTProxyServlet]: Initialization successful.
+[11/20/18 21:14:58:279 UTC] 0000003d com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: Notification.
+[11/20/18 21:14:58:280 UTC] 0000003d com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module Notification has been bound to default_host.
+[11/20/18 21:14:58:280 UTC] 0000003d com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://mc-notificationslack-1bd5fa20-ecf9-11e8-8bb7-idc-75f8c9bfb7tzhk:9080/notification-slack/
+[11/20/18 21:14:58:283 UTC] 00000033 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/notification-slack
+[11/20/18 21:14:58:283 UTC] 00000033 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[11/20/18 21:14:58:285 UTC] 0000003d com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application notification-slack started in 0.864 seconds.
+[11/20/18 21:14:58:307 UTC] 00000033 com.ibm.ws.webcontainer.security.ServletStartedListener      I CWWKS9123I:  For URL /* in application notification-slack, the following HTTP methods are uncovered, and not accessible: GET PUT DELETE HEAD OPTIONS TRACE 
+[11/20/18 21:14:58:406 UTC] 00000037 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/default/app/mc-target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[11/20/18 21:15:27:448 UTC] 00000029 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [microProfile-1.2, mpFaultTolerance-1.0, servlet-3.1, ssl-1.0, jndi-1.0, logstashCollector-1.0, mpHealth-1.0, appSecurity-2.0, jsonp-1.0, mpConfig-1.1, jaxrs-2.0, jaxrsClient-2.0, concurrent-1.0, jwt-1.0, mpMetrics-1.0, mpJwt-1.0, json-1.0, cdi-1.2, distributedMap-1.0].
+[11/20/18 21:15:27:449 UTC] 00000029 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 37.192 seconds.
+[11/20/18 21:15:27:449 UTC] 00000029 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The server defaultServer is ready to run a smarter planet.
