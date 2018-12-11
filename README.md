@@ -4,7 +4,7 @@ This service expects a **JSON** object in the http body, containing the followin
 
 There is another implementation of this service called *notification-twitter*, which sends the message to **Twitter** instead.  If both implmentations of the *Notification* service are installed, you could use **Istio** *routing rules* to determine which gets used, and under what conditions.  An example Istio route rule is in this repository (and another is in the *notification-twitter* repository).
 
- ### Deploy
+### Deploy
 
 Use WebSphere Liberty helm chart to deploy Slack Notification microservice:
 ```bash
