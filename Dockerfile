@@ -18,7 +18,12 @@ COPY target/notification-slack-1.0-SNAPSHOT.war /config/apps/NotificationSlack.w
 COPY key.jks /config/resources/security/key.jks
 # COPY ltpa.keys /output/resources/security/ltpa.keys
 
+#apt-get needs root access
+USER root
+RUN chmod g+w /config/apps
+
 RUN apt-get update
 RUN apt-get install curl -y
+USER 1001
 
 RUN installUtility install --acceptLicense defaultServer
