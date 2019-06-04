@@ -1,4 +1,4 @@
-#       Copyright 2017 IBM Corp All Rights Reserved
+#       Copyright 2017-2019 IBM Corp All Rights Reserved
 
 #   Licensed under the Apache License, Version 2.0 (the "License");
 #   you may not use this file except in compliance with the License.
@@ -12,18 +12,12 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
-FROM websphere-liberty:microProfile2
-COPY server.xml /config/server.xml
-COPY target/notification-slack-1.0-SNAPSHOT.war /config/apps/NotificationSlack.war
-COPY key.jks /config/resources/security/key.jks
-# COPY ltpa.keys /output/resources/security/ltpa.keys
+# FROM websphere-liberty:microProfile2
+FROM open-liberty:microProfile2
 
-#apt-get needs root access
-USER root
-RUN chmod g+w /config/apps
+COPY --chown=1001:0 server.xml /config/server.xml
+COPY --chown=1001:0 target/notification-slack-1.0-SNAPSHOT.war /config/apps/NotificationSlack.war
+COPY --chown=1001:0 key.jks /config/resources/security/key.jks
+# COPY --chown=1001:0 ltpa.keys /output/resources/security/ltpa.keys
 
-RUN apt-get update
-RUN apt-get install curl -y
-USER 1001
-
-RUN installUtility install --acceptLicense defaultServer
+RUN configure.sh
