@@ -77,7 +77,7 @@ spec:
         imagePullPolicy: Always
         readinessProbe:
           httpGet:
-            path: /health
+            path: /health/ready
             port: 9080
           initialDelaySeconds: 30
           periodSeconds: 15
@@ -85,7 +85,7 @@ spec:
           failureThreshold: 3
         livenessProbe:
           httpGet:
-            path: /health
+            path: /health/live
             port: 9080
           initialDelaySeconds: 90
           periodSeconds: 15
