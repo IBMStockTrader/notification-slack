@@ -15,7 +15,7 @@
 # FROM websphere-liberty:microProfile4
 FROM openliberty/open-liberty:kernel-slim-java11-openj9-ubi
 
-COPY --chown=1001:0 src/main/libery/config /config/
+COPY --chown=1001:0 src/main/liberty/config /config/
 
 # This script will add the requested XML snippets to enable Liberty features and grow image to be fit-for-purpose using featureUtility. 
 # Only available in 'kernel-slim'. The 'full' tag already includes all features for convenience.
