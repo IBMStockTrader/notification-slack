@@ -14,10 +14,10 @@
    limitations under the License.
  */
 
-package com.ibm.hybrid.cloud.sample.stocktrader.notification;
+package com.ibm.hybrid.cloud.sample.stocktrader.notification.client;
 
-import com.ibm.hybrid.cloud.sample.stocktrader.notification.LoyaltyChange;
-import com.ibm.hybrid.cloud.sample.stocktrader.notification.NotificationResult;
+import com.ibm.hybrid.cloud.sample.stocktrader.notification.json.LoyaltyChange;
+import com.ibm.hybrid.cloud.sample.stocktrader.notification.json.NotificationResult;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.ws.rs.ApplicationPath;
