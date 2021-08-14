@@ -1,0 +1,1 @@
+-Dcom.ibm.hybrid.cloud.sample.stocktrader.notification.OpenWhiskClient/mp-rest/url=https://openwhisk.ng.bluemix.net/api/v1/namespaces/jalcorn%40us.ibm.com_dev/actions/PostLoyaltyLevelToSlack
