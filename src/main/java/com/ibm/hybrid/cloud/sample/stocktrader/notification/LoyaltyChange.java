@@ -1,5 +1,5 @@
 /*
-       Copyright 2017 IBM Corp All Rights Reserved
+       Copyright 2017-2021 IBM Corp All Rights Reserved
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
    limitations under the License.
  */
 
-package com.ibm.hybrid.cloud.sample.portfolio;
+package com.ibm.hybrid.cloud.sample.stocktrader.notification;
 
 /** JSON-B POJO class representing an ODM business rule for determining the loyalty level of a portfolio */
 public class LoyaltyChange {
@@ -31,6 +31,13 @@ public class LoyaltyChange {
         setOwner(initialOwner);
         setOld(initialOldLoyalty);
         setNew(initialNewLoyalty);
+    }
+
+    public LoyaltyChange(String initialOwner, String initialOldLoyalty, String initialNewLoyalty, String initialId) { //convenience constructor
+        setOwner(initialOwner);
+        setOld(initialOldLoyalty);
+        setNew(initialNewLoyalty);
+        setId(initialId);
     }
 
     public String getOwner() {
