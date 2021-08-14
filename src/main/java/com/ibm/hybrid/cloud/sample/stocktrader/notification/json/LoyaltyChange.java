@@ -14,7 +14,7 @@
    limitations under the License.
  */
 
-package com.ibm.hybrid.cloud.sample.stocktrader.notification;
+package com.ibm.hybrid.cloud.sample.stocktrader.notification.json;
 
 /** JSON-B POJO class representing an ODM business rule for determining the loyalty level of a portfolio */
 public class LoyaltyChange {
