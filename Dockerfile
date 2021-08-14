@@ -15,14 +15,12 @@
 # FROM websphere-liberty:microProfile4
 FROM openliberty/open-liberty:kernel-slim-java11-openj9-ubi
 
-COPY --chown=1001:0 server.xml /config/server.xml
+COPY --chown=1001:0 src/main/libery/config /config/
 
 # This script will add the requested XML snippets to enable Liberty features and grow image to be fit-for-purpose using featureUtility. 
 # Only available in 'kernel-slim'. The 'full' tag already includes all features for convenience.
 RUN features.sh
 
 COPY --chown=1001:0 target/notification-slack-1.0-SNAPSHOT.war /config/apps/NotificationSlack.war
-COPY --chown=1001:0 *.p12 /config/resources/security/
-# COPY --chown=1001:0 ltpa.keys /output/resources/security/ltpa.keys
 
 RUN configure.sh
