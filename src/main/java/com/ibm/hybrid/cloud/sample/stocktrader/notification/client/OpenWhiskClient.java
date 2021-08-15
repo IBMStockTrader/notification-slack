@@ -35,6 +35,7 @@ import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 /** mpRestClient "remote" interface for the API Connect facade for the IEX stock quote service */
 public interface OpenWhiskClient {
 	@POST
+	@Consumes("application/json")
 	@Produces("application/json")
 	public NotificationResult sendSlackMessageViaOpenWhisk(@HeaderParam("Authorizaion") String basicAuth, LoyaltyChange loyaltyChange);
 }
