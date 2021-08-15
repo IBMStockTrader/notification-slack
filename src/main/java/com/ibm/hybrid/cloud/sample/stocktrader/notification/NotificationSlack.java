@@ -1,5 +1,5 @@
 /*
-       Copyright 2017 IBM Corp All Rights Reserved
+       Copyright 2017-2021 IBM Corp All Rights Reserved
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -16,6 +16,7 @@
 
 package com.ibm.hybrid.cloud.sample.stocktrader.notification;
 
+import com.ibm.hybrid.cloud.sample.stocktrader.notification.client.OpenWhiskClient;
 import com.ibm.hybrid.cloud.sample.stocktrader.notification.json.LoyaltyChange;
 import com.ibm.hybrid.cloud.sample.stocktrader.notification.json.NotificationResult;
 
