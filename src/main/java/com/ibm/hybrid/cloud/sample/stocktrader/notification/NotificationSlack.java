@@ -122,7 +122,7 @@ public class NotificationSlack extends Application {
 			} else {
 				String credentials = id + ":" + pwd;
 				authorization = "Basic " + Base64.getEncoder().encodeToString(credentials.getBytes());
-				logger.fine("Initialization completed successfully!");
+				logger.info("Initialization completed successfully!");
 			}
 		} catch (Throwable t) {
 			logger.warning("Unexpected error occurred during initializiation");
