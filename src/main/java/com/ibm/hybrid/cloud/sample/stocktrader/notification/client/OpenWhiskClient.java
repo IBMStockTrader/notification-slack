@@ -38,5 +38,5 @@ public interface OpenWhiskClient {
 	@POST
 	@Consumes("application/json")
 	@Produces("application/json")
-	public NotificationResult sendSlackMessageViaOpenWhisk(@HeaderParam("Authorizaion") String basicAuth, LoyaltyChange loyaltyChange);
+	public NotificationResult sendSlackMessageViaOpenWhisk(@HeaderParam("Authorization") String basicAuth, LoyaltyChange loyaltyChange);
 }
