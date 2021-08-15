@@ -53,12 +53,10 @@ import org.eclipse.microprofile.rest.client.inject.RestClient;
 public class NotificationSlack extends Application {
 	private static Logger logger = Logger.getLogger(NotificationSlack.class.getName());
 
+	private static String authorization = null;
+
 	private @Inject @RestClient OpenWhiskClient openWhiskClient;
 
-	private String url = null;
-	private String id = null;
-	private String pwd = null;
-	private String authorization = null;
 
 	// Override OpenWhisk Client URL if config map is configured to provide URL
 	static {
@@ -114,15 +112,21 @@ public class NotificationSlack extends Application {
 	             imagePullSecrets:
 	             - name: dockerhubsecret
 			 */
-			String id = System.getenv("OW_ID");
-			String pwd = System.getenv("OW_PASSWORD");
 
-			if (id == null) {
-				logger.warning("The OW_ID environment variable was not set!");
-			} else {
-				String credentials = id + ":" + pwd;
-				authorization = "Basic " + Base64.getEncoder().encodeToString(credentials.getBytes());
-				logger.info("Initialization completed successfully!");
+			if (authorization == null) { //do this once
+				String id = System.getenv("OW_ID");
+				String pwd = System.getenv("OW_PASSWORD");
+
+				if (id == null) {
+					logger.warning("The OW_ID environment variable was not set!");
+				} else if (pwd == null) {
+					logger.warning("The OW_PASSWORD environment variable was not set!");
+				} else {
+					String credentials = id + ":" + pwd;
+					logger.finer("Credentials: "+credentials);
+					authorization = "Basic " + Base64.getEncoder().encodeToString(credentials.getBytes());
+					logger.info("Initialization completed successfully!");
+				}
 			}
 		} catch (Throwable t) {
 			logger.warning("Unexpected error occurred during initializiation");
