@@ -134,8 +134,8 @@ public class NotificationSlack extends Application {
 		}
 	}
 
-    @POST
-    @Path("/")
+	@POST
+	@Path("/")
 	@Consumes("application/json")
 	@Produces("application/json")
 //	@RolesAllowed({"StockTrader", "StockViewer"}) //Couldn't get this to work; had to do it through the web.xml instead :(
@@ -144,6 +144,8 @@ public class NotificationSlack extends Application {
 		String message = null;
 
 		if (loyaltyChange != null) try {
+			if (authorization == null) logger.warning("Authorization is null!");
+
 			logger.fine("Notifying about change in loyalty level");
 
 			openWhiskClient.sendSlackMessageViaOpenWhisk(authorization, loyaltyChange);
