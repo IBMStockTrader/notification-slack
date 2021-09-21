@@ -1,4 +1,4 @@
-This service posts a message to the *stock-trader-messsages* channel on the ibm-cloud@slack.com server on **Slack**.
+This service posts a message to the *stock-trader-messsages* channel on the ibm-cloud@slack.com server on **Slack**, via a call to a serverless function.  Depending on the URL that is configured, it either invokes an IBM Cloud Functions (aka Apache OpenWhisk) function, or an AWS Lambda function.  Either way expects the same input JSON and produces the same result.
 
 This service expects a **JSON** object in the http body, containing the following fields: *id*, *owner*, *old*, and *new*.  It returns a **JSON** object containing the message sent (or any error message from the attempt) and the location (**Slack**).
 
