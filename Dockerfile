@@ -13,7 +13,7 @@
 #   limitations under the License.
 
 # FROM openliberty/open-liberty:kernel-slim-java11-openj9-ubi
-FROM openliberty/open-liberty:21.0.0.12-full-java11-openj9-ubi
+FROM openliberty/open-liberty:22.0.0.6-full-java17-openj9-ubi
 
 COPY --chown=1001:0 src/main/liberty/config /config/
 
